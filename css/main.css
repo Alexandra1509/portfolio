@@ -2351,6 +2351,9 @@ li {
  
 }
 .social-media--1{ color: #1d1d1d;}
+.social-media--1:hover{
+  color: #990100;
+}
 
 .social-media:after {
   content: "";
