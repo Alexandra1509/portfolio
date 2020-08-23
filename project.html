@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!--/.Header -->
+    <header id="header">
+        <div class="preloader">
+            <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                </path>
+            </svg>
+        </div>
+        <a href="#header">
+            <svg class="anchor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.523 490.523"
+                style="enable-background:new 0 0 490.523 490.523;" xml:space="preserve" fill="none">
+                <path d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047
+          c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136
+          c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z" />
+                <path d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151
+          c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0
+          l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z" />
+            </svg>
+        </a>
+        <div class="round" id="arrowTop"></div>
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__content">
+                        <a href="index.html" class="user__name">INTENSE</a>
+                        <div id="particles-js"></div>
+                        <script src="js/three.js"></script>
+                        <script src="js/Projector.js"></script>
+                        <script src="js/CanvasRenderer2.js"></script>
+                        <script src="js/stats.min.js"></script>
+                        <script src="js/Bird.js"></script>
+                        <script src="js/mainbird.js"></script>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html#projects">Портфолио</a>
+                    <a class="nav__link" href="about.html">Резюме</a>
+                    <a class="nav__link" href="index.html#articles">Статьи</a>
+                    <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">Заказать проект</a>
+                </nav>
+                <!-- Burger -->
+                <nav class="mobile-menu  mobile-menu--about">
+                    <div class="user__name user__name--mobile">INTENSE</div>
+                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                    <label for="checkbox" class="mobile-menu__btn">
+                        <div class="mobile-menu__icon"></div>
+                    </label>
+                    <div class="mobile-menu__container">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="index.html#projects"
+                                    class="mobile-menu__link">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">Обо мне</a>
+                            </li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /. Burger -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="travel-photo">
+                <img class="travel-photo__img" src="./img/portfolio/main-tez.png" alt="">
+            </div>
+            <div class="travel__inner travel__inner--1">
+                <div class="travel__col travel__col--1">
+                    <div class="travel__title">Tez tour — один из ведущих организаторов туров на рынке туристских услуг
+                    </div>
+                </div>
+                <div class="travel__col travel__col--2">
+                    <div class="travel__descr">
+                        <div class="travel__name">О проекте</div>
+                        <div class="travel__text">Это крупнейший мировой туроператор, предлагающий услуги по размещению,
+                            питанию и транспортному обслуживанию в течение 15 лет. Однако, несмотря на то, что слоган
+                            компании — “Высокие технологии в туризме”, представленный сайт — устаревший, неудобный в
+                            использовании и имеет проблемы с адаптивностью. </div>
+                    </div>
+                    <div class="travel__descr">
+                        <div class="travel__name">Исследование</div>
+                        <div class="travel__text">Поставив себе задачу разработать интуитивно понятный интерфейс, я
+                            провела маркетинговое исследование, создала целевых персон и составила CJM карту
+                            пользователя. Полученные в результате анализа данные послужили основой для разработки
+                            прототипа и макета сайта (все вышеперечисленные материалы <a
+                                href="https://www.figma.com/file/9JVSHltdMOHsj811mKt1Rh/Tourists-agency?node-id=172%3A233"
+                                class="books__link">доступны по ссылке</a>).</div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel__col travel__col--3">
+                <img class="project-img" src="./img/portfolio/main.png" alt="" class="project-img">
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--1">
+                    <div class="travel__title">
+                        Цель редизайна
+                    </div>
+                </div>
+                <div class="travel__col travel__col--2">
+                    <div class="travel__descr">
+                        <div class="travel__text">На сайте должно быть максимально просто, удобно и понятно любому
+                            пользователю, вне зависимости от возраста и знаний ПК</div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--3">
+                    <img class="project-img" src="./img/portfolio/search.png" alt="" class="project-img">
+                </div>
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--1">
+                    <div class="travel__title">
+                        Новый пользователь на сайте
+                    </div>
+                </div>
+                <div class="travel__col travel__col--2">
+                    <div class="travel__descr">
+                        <div class="travel__text">Поля регистрации и авторизации заполняются за несколько минут и не
+                            требуют избыточной информации, чтобы не снизить заинтересованность путешественника в покупке
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--4">
+                    <img class="project-img project-img-big" src="./img/portfolio/verification.png" alt="">
+                </div>
+                <div class="travel__col travel__col--4"><img class="project-img"
+                        src="./img/portfolio/verification-1.png" alt=""></div>
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--1">
+                    <div class="travel__title">
+                        Последовательность и логика
+                    </div>
+                </div>
+                <div class="travel__col travel__col--2">
+                    <div class="travel__descr">
+                        <div class="travel__text">Навигационное меню помогает пользователю понять, на
+                            каком этапе оформления тура он сейчас находится. А перед осуществлением платежа, сервис дает
+                            исчерпывающую информацию о поездке
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--4">
+                    <img class="project-img project-img-cut" src="./img/portfolio/hotels-cut.png" alt="">
+                </div>
+                <div class="travel__col travel__col--4"><img class="project-img project-img-cut"
+                        src="./img/portfolio/payment-cut.png" alt=""></div>
+            </div>
+            <div class="travel__inner">
+                <div class="travel__col travel__col--1">
+                    <!-- <div class="travel__title">
+                        Остальные страницы
+                    </div> -->
+                    <!-- <div class="travel__text">(щелкните по макету для полноэкранного отображения)
+                    </div> -->
+                </div>
+                <div class="travel__col travel__col--2">
+                    <div class="travel__descr">
+                        <div class="travel__text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel__inner travel__inner--1">
+                <div class="travel__col travel__col--5"><a data-fancybox="gallery" href="./img/portfolio/news.png"><img
+                            class="project-img" src="./img/portfolio/news.png"></a></div>
+                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
+                        href="./img/portfolio/article.png"><img class="project-img"
+                            src="./img/portfolio/article.png"></a></div>
+                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
+                        href="./img/portfolio/cooperation.png"><img class="project-img"
+                            src="./img/portfolio/cooperation.png"></a></div>
+                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
+                        href="./img/portfolio/about_the_company.png"><img class="project-img"
+                            src="./img/portfolio/about_the_company.png"></a></div>
+                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
+                        href="./img/portfolio/employeer-1.png"><img class="project-img"
+                            src="./img/portfolio/employeer-1.png"></a></div>
+                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
+                        href="./img/portfolio/employeer-2.png"><img class="project-img"
+                            src="./img/portfolio/employeer-2.png"></a></div>
+            </div>
+
+            <div class="container">
+                <div class="works__info--title">
+                    Другие проекты
+                </div>
+                <div class="travel__inner">
+                    <div class="portfolio">
+                        <div class="portfolio__col" data-cat="web design">
+                            <a target="_blank" class="project__link"
+                                href="https://www.behance.net/gallery/88561043/Alexandra-Millenary-hats-shop-redesign">
+                                <div class="work">
+                                    <div class="work__img-wrapper">
+                                        <img class="work__image" src="img/Millinery.jpg" alt="">
+                                    </div>
+                                    <div class="work__content">
+                                        <div class="work__title">Alexandra Millenary</div>
+                                        <div class="work__subtitle">Редизайн сайта дизайнера шляп ручной работы
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio__col" data-cat="web design">
+                            <a target="_blank" class="project__link" href="https://alexandra1509.github.io/restaurant/">
+                                <div class="work">
+                                    <div class="work__img-wrapper">
+                                        <img class="work__image" src="./img/restaurant.jpg" alt="">
+                                    </div>
+                                    <div class="work__content">
+                                        <div class="work__title">Vinkeles</div>
+                                        <div class="work__subtitle">Дизайн и верстка сайта ресторана Мишлен</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog  modal__dialog--sm">
+            <button class="modal__close" type="button" data-close>
+                <div class="modal__close__btn--icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                        style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="20" height="19">
+                        <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+           L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+           c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+           l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+           L284.286,256.002z" />
+                    </svg>
+                </div>
+            </button>
+            <div class="contact">
+                <div class="contact__left">
+                    <div class="contact__title mb-0">Связаться со мной</div>
+                    <div class="contact__subtitle">Чтобы начать диалог о вашей задаче, позвоните мне
+                        <a class="number" href="tel:+7 (911) 792 71 53">+7&nbsp;911-792-71-53</a>
+                        или заполните форму обратной связи.</div>
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <input class="form__input" name="input-email" type="text" id="input-name"
+                                placeholder="Ваше имя">
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input" name="input-email" type="text" id="input-email"
+                                placeholder="Почта или номер телефона">
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__textarea" name="input-text" id="input-text"
+                                placeholder="Несколько слов о вашем проекте"></textarea>
+                        </div>
+
+                        <div class="text-left">
+                            <button class="btn btn__contact" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div><!-- /.contact__left -->
+            </div><!-- /.contact -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__credits">
+                        <div class="footer__copyright">@2020 Все права защищены</div>
+                        <div class="footer__social">
+                            <a href="#" target="blank"></a>
+                            <a href="#" target="blank"></a>
+                            <a href="#" target="blank"></a>
+                            <a href="#" target="blank"></a>
+                        </div>
+                    </div>
+                    <div class="footer__nav">
+                        <a class="footer__nav--link" href="index.html#projects">Портфолио</a>
+                        <a class="footer__nav--link" href="about.html">Резюме</a>
+                        <a class="footer__nav--link" href="index.html#articles">Статьи</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.Footer -->
+    <!-- JS -->
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+    <script>
+        $(function () {
+            $('.round').click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#header').offset().top
+                }, 500);
+            });
+        });
+    </script>
+    <script>
+        //   Anchor
+        $(document).ready(function () {
+            var $element = $('.portfolio');
+            let counter = 0;
+
+
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop() + $(window).height();
+                var offset = $element.offset().top
+                if (scroll > offset && counter == 0) {
+                    $('#arrowTop').fadeIn(800);
+                    counter = 0;
+                }
+            });
+            $('#arrowTop').click(function () {
+                $('#arrowTop').fadeOut();
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#arrowTop').fadeIn();
+                } else {
+                    $('#arrowTop').fadeOut();
+                }
+            });
+        });
+    </script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</body>
+
+</html>
