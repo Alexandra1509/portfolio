@@ -2348,6 +2348,7 @@ li {
   padding-bottom: 0.5rem;
   display: inline-block;
   position: relative;
+  color: #1d1d1d;
 }
 
 .social-media:after {
