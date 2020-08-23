@@ -1,0 +1,1248 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+
+ <head>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="./css/main.css">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="./css/normalize.css">
+     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ </head>
+
+ <body>
+
+     <!--/.Header -->
+     <header id="header">
+         <div class="preloader">
+             <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                 <path fill="currentColor"
+                     d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                 </path>
+             </svg>
+         </div>
+         <a href="#header">
+             <svg class="anchor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.523 490.523"
+                 style="enable-background:new 0 0 490.523 490.523;" xml:space="preserve" fill="none">
+                 <path d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047
+               c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136
+               c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z" />
+                 <path
+                     d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151
+               c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0
+               l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z" />
+             </svg>
+         </a>
+         <div class="round" id="arrowTop"></div>
+         <div class="container">
+             <div class="header__inner">
+                 <div class="user">
+                     <div class="user__content">
+                         <a href="index.html" class="user__name">Intense</a>
+                         <script src="js/three.js"></script>
+                         <script src="js/Projector.js"></script>
+                         <script src="js/CanvasRenderer2.js"></script>
+                         <script src="js/stats.min.js"></script>
+                         <!-- <script src="js/Bird.js"></script> -->
+                         <script src="js/mainbird.js"></script>
+                     </div>
+                 </div>
+                 <nav class="nav">
+                     <a class="nav__link" href="#projects">Портфолио</a>
+                     <a class="nav__link" href="about.html">Резюме</a>
+                     <a class="nav__link" href="#articles">Статьи</a>
+                     <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">Заказать проект</a>
+                 </nav>
+                 <!-- Burger -->
+                 <nav class="mobile-menu  mobile-menu--about">
+                     <div class="user__name user__name--mobile">Intense</div>
+                     <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                     <label for="checkbox" class="mobile-menu__btn">
+                         <div class="mobile-menu__icon"></div>
+                     </label>
+                     <div class="mobile-menu__container">
+                         <ul class="mobile-menu__list">
+                             <li class="mobile-menu__item"><a href="#projects" class="mobile-menu__link">Портфолио</a>
+                             </li>
+                             <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">Резюме</a>
+                             </li>
+                             <li class="mobile-menu__item"><a href="#articles" class="mobile-menu__link">Статьи</a></li>
+                         </ul>
+                     </div>
+                 </nav>
+                 <!-- /. Burger -->
+             </div>
+         </div>
+     </header>
+     <!--/.Intro -->
+     <section class="intro">
+         <div class="container">
+             <div class="intro__inner">
+                 <div class="intro__content">
+                     <div class="intro__title">Intense Studio</div>
+                     <div class="wrapper__h2">
+                         <h2 class="intro__subtitle">Современные решения для вашего бизнеса</h2>
+                     </div>
+                 </div>
+                 <div class="intro__media">
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- Intro -->
+     <!-- Works -->
+     <section>
+         <div class="works">
+             <!-- Container -->
+             <div class="container">
+                 <div class="works__info">
+                     <div class="works__info--title" id="projects">Проекты</div>
+                     <div class="works__nav">
+                         <a class="works__nav-link" href="#" data-filter="all">Все проекты</a>
+                         <a class="works__nav-link" href="#" data-filter="web design">Веб дизайн</a>
+                         <a class="works__nav-link" href="#" data-filter="app">Дизайн и верстка</a>
+                         <!-- <a class="works__nav-link" href="#" data-filter="illustrations">Иллюстрации</a> -->
+                         <a class="works__nav-link" href="#" data-filter="animations">3D анимации</a>
+                         <a class="works__nav-link" href="#" data-filter="illustrations">Dribble shots</a>
+                     </div>
+                 </div>
+                 <div class="portfolio">
+                     <div class="portfolio__col" data-cat="web design">
+                         <a target="_blank" class="project__link"
+                             href="https://www.behance.net/gallery/88561043/Alexandra-Millenary-hats-shop-redesign">
+                             <div class="work">
+                                 <div class="work__img-wrapper">
+                                     <img class="work__image" src="img/Millinery.jpg" alt="">
+                                 </div>
+                                 <div class="work__content">
+                                     <div class="work__title">Millenary</div>
+                                     <div class="work__subtitle">Редизайн сайта дизайнера шляп ручной работы
+                                     </div>
+                                 </div>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="portfolio__col" data-cat="web design">
+                         <a target="_blank" class="project__link" href="project.html">
+                             <div class="work">
+                                 <div class="work__img-wrapper">
+                                     <img class="work__image" src="./img/travel1.jpg" alt="">
+                                 </div>
+                                 <div class="work__content">
+                                     <div class="work__title">TEZ TOUR</div>
+                                     <div class="work__subtitle">Редизайн сайта крупнейшего туроператора мира
+                                     </div>
+                                 </div>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="portfolio__col" data-cat="animation">
+                         <div class="work" data-modal="#modal_project_1">
+                             <div class="work__img-wrapper">
+                                 <img class="work__image" src="img/cinema-2.png" alt="">
+                             </div>
+                             <div class="work__content">
+                                 <div class="work__title">3D модель</div>
+                                 <div class="work__subtitle">Набор геометрических тел в пространстве
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="portfolio__col" data-cat="illustrations">
+                         <div class="work" data-modal="#modal_project_3">
+                             <div class="work__img-wrapper">
+                                 <img class="work__image" src="img/neomorfism.png" alt="">
+                             </div>
+                             <div class="work__content">
+                                 <div class="work__title">Неоморфизм</div>
+                                 <div class="work__subtitle">Тренд уходящего года
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="portfolio__col" data-cat="app">
+                         <a target="_blank" class="project__link" href="https://alexandra1509.github.io/restaurant/">
+                             <div class="work">
+                                 <div class="work__img-wrapper">
+                                     <img class="work__image" src="./img/restaurant.jpg" alt="">
+                                 </div>
+                                 <div class="work__content">
+                                     <div class="work__title">Vinkeles</div>
+                                     <div class="work__subtitle">Дизайн и верстка сайта ресторана Мишлен</div>
+                                 </div>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="portfolio__col" data-cat="app">
+                         <a target="_blank" class="project__link" href="https://alexandra1509.github.io/?#promo">
+                             <div class="work">
+                                 <div class="work__img-wrapper">
+                                     <img class="work__image" src="./img/teacher.jpg" alt="">
+                                 </div>
+                                 <div class="work__content">
+                                     <div class="work__title">"Английский — детям"</div>
+                                     <div class="work__subtitle">Верстка и дизайн
+                                         (первый проект)
+                                     </div>
+                                 </div>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="portfolio__col" data-cat="animations">
+                         <div class="work" data-modal="#modal_project_4">
+                             <div class="work__img-wrapper">
+                                 <img class="work__image" src="./img/4dobject.jpg" alt="">
+                             </div>
+                             <div class="work__content">
+                                 <div class="work__title">3D метабол</div>
+                                 <div class="work__subtitle">Анимированная
+                                     фигура с градиентом
+                                 </div>
+                             </div>
+                         </div>
+                         </a>
+                     </div>
+                     <div class="portfolio__col" data-cat="app">
+                         <a target="_blank" class="project__link" href="https://alexandra1509.github.io/Avgust/">
+                             <div class="work">
+                                 <div class="work__img-wrapper">
+                                     <img class="work__image" src="./img/Avgust.jpg" alt="">
+                                 </div>
+                                 <div class="work__content">
+                                     <div class="work__title">AVGUST</div>
+                                     <div class="work__subtitle">Верстка и дизайн первой страницы магазина украшений
+                                     </div>
+                                 </div>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="portfolio__col" data-cat="illustrations">
+                         <div class="work" data-modal="#modal_project_2">
+                             <div class="work__img-wrapper">
+                                 <img class="work__image" src="img/neomorfism2.png" alt="">
+                                 <div class="work__content">
+                                     <div class="work__title">Неоморфизм</div>
+                                     <div class="work__subtitle">Тренд уходящего года
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div><!-- ./Portfolio  -->
+         </div><!-- /.Container -->
+         </div><!-- /.Works -->
+     </section>
+     <!-- About -->
+     <section class="about">
+         <div class="container">
+             <div class="about__inner">
+                 <div class="about__photo">
+                     <img class="img__about" src="./img/my-photo1.jpg" alt="">
+                 </div>
+                 <div class="about__content">
+                     <!-- <h3 class="about__title">Здравствуйте!</h3> -->
+                     <h2 class="about__bigtitle">Обо мне</h2>
+                     <div class="social social--about">
+                         <a class="social__link" href="https://www.behance.net/sasha150916db9">Behance
+                             <!-- <img src="#" alt="#"> -->
+                         </a>
+                         <a class="social__link" href="https://www.instagram.com/alexandra_santih/">Instagram
+                             <!-- <img src="#" alt="#"> -->
+                         </a>
+                         <a class="social__link" href="https://vk.com/alyaafanasenkova1995">Вконтакте
+                             <!-- <img src="#" alt="#"> -->
+                         </a>
+                     </div>
+                     <div class="about__text">
+                         <p>Здравствуйте, меня зовут Александра. Мне 24 и я разрабатываю удобные и современные решения
+                             для бизнеса. Мне нравится экспериментировать и пробовать разные направления: веб дизайн, UX
+                             копирайтинг, 3D графика, анимации.</p>
+                         <p>Я верю, что не существует единственного верного решения —
+                             все зависит от поставленной задачи и имеющихся ограничений. </p>
+                         <p>Мир постоянно развивается,
+                             поэтому важно учиться и быть в курсе событий. Цитируя Алису Льюисса Кэролла: &quotНужно
+                             бежать со всех ног, чтобы только оставаться на месте, а чтобы куда-то попасть, надо бежать
+                             как минимум вдвое быстрее!&quot
+                         </p>
+                     </div>
+                     <a class="nav__link nav__link--btn nav__link--btn--resume" href="about.html">Мое
+                         резюме</a>
+                     <a class="nav__link nav__link--btn nav__link--btn--about" href="#"
+                         data-modal="#modal_hire_me">Заказать проект</a>
+
+                 </div><!-- /.about__content -->
+             </div><!-- /.about__inner -->
+         </div> <!-- /.container -->
+     </section>
+     <!-- /.About -->
+     <!-- Offer -->
+     <section class="offer">
+         <div class="container">
+             <div class="offer__header">
+                 Процесс работы</div>
+             <div class="offer__subheader">
+                 Разрабатываю функциональные и креативные концепции,
+                 отвечающие поставленным задачам</div>
+             <div class="offer__inner">
+                 <div class="offer__col offer__col--1">
+                     <div class="offer__icon">
+                         <div class="offer__icon--inner">
+                             <div class="round1">
+                                 <div class="round2">
+                                     <div class="round3">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="offer__content">
+                         <div class="offer__title">Стратегия</div>
+                         <div class="offer__text">Изучение деятельности компании заказчика, в целях понимания целей
+                             и задач разработки проекта</div>
+                         <div class="offer__subinner">
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">01</div>
+                                 <div class="offer__subcol--text">Маркетинговое исследование</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">02</div>
+                                 <div class="offer__subcol--text">Определение целевого потребителя</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">03</div>
+                                 <div class="offer__subcol--text">Анализ конкурентов на рынке</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">04</div>
+                                 <div class="offer__subcol--text">Составление SWOT анализа</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="offer__col offer__col--2">
+                     <div class="offer__icon">
+                         <div class="offer__icon--inner">
+                             <div class="round1">
+                                 <div class="round2">
+                                     <div class="round3">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="offer__content">
+                         <div class="offer__title">Дизайн и прототипирование</div>
+                         <div class="offer__text">Создание интерактивной дизайн-системы, от цикла аналитики и
+                             проектирования, до анимации интерфейса</div>
+                         <div class="offer__subinner">
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">01</div>
+                                 <div class="offer__subcol--text">Брендинг</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">02</div>
+                                 <div class="offer__subcol--text">UX исследования</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">03</div>
+                                 <div class="offer__subcol--text">UI визуализация</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">04</div>
+                                 <div class="offer__subcol--text">Качественный контент и стратегия</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="offer__col offer__col--3">
+                     <div class="offer__icon">
+                         <div class="offer__icon--inner">
+                             <div class="round1">
+                                 <div class="round2">
+                                     <div class="round3">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="offer__content">
+                         <div class="offer__title">Платформа разработки</div>
+                         <div class="offer__text">Выбор решения для реализации сайта, в зависимости от
+                             стоящих задач, располагаемого бюджета и времени</div>
+                         <div class="offer__subinner">
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">01</div>
+                                 <div class="offer__subcol--text">Tilda</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">02</div>
+                                 <div class="offer__subcol--text">Readimag</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">03</div>
+                                 <div class="offer__subcol--text">Webflow</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">04</div>
+                                 <div class="offer__subcol--text">Ручная верстка</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="offer__col offer__col--4">
+                     <div class="offer__icon">
+                         <div class="offer__icon--inner">
+                             <div class="round1">
+                                 <div class="round2">
+                                     <div class="round3">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="offer__content">
+                         <div class="offer__title">Постпроектный анализ</div>
+                         <div class="offer__text">По окончании разработки, в процессе внедрения,
+                             необходимо проверить сайт на возможные ршибки и неудобства пользования
+                         </div>
+                         <div class="offer__subinner">
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">01</div>
+                                 <div class="offer__subcol--text">A/B тестирование</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">02</div>
+                                 <div class="offer__subcol--text">Интервьирование</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">03</div>
+                                 <div class="offer__subcol--text">Сбор метрик</div>
+                             </div>
+                             <div class="offer__subcol">
+                                 <div class="offer__subcol--numb">04</div>
+                                 <div class="offer__subcol--text">Анкетирование</div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- <div class="offer__text">01 Проведение исследования</div>
+         <div class="offer__text">02 Разработка прототипа</div>
+         <div class="offer__text">03 Создание дизайн-макета</div>
+         <div class="offer__text">04 Верстка адаптивного сайта</div>
+         <div class="offer__text">05 Технические настройки</div>
+         <a href="#" class="offer__subtitle">Смотреть подробнее</a>
+         </div> -->
+     </section>
+     <!--/. Offer -->
+     <!-- News -->
+     <section class="news">
+         <div class="container">
+             <!-- <div class="news__header">Информативно</div> -->
+
+             <div class="news__header" id="articles">Статьи</div>
+             <div class="news__inner">
+                 <div class="news__subheader">Интересные публикации из моей персональной подборки
+                     (типографика, творчество, классика, технологии, искусство)
+                 </div>
+
+                 <!-- <a href="#" class="news__link">Смотреть все рекомендации</a> -->
+             </div>
+             <!--/. News -->
+             <!-- Articles -->
+             <div class="articles">
+                 <div class="articles__col">
+                     <div class="articles__item">
+                         <a target="_blank" class="project__link"
+                             href="https://designpub.ru/text-thinking-ec60ffc1470d">
+                             <div class="articles__header">
+                                 <!-- <time class="articles__date">30 июня</time> -->
+                                 <img class="articles__photo" src="./img/article-1.jpg" height="100%" alt="">
+                             </div>
+                             <div class="articles__content">
+                                 <div class="articles__title">Как найти идею или решение задачи, с помощью
+                                     воображения</div>
+                                 <div class="articles__info">Илья Сидоренко
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
+                 </a>
+                 <div class="articles__col">
+                     <div class="articles__item">
+                         <a target="_blank" class="project__link"
+                             href="https://designpub.ru/fridaydigest-253-7ff3caf20468">
+                             <div class="articles__header">
+                                 <!-- <time class="articles__date">10 июля</time> -->
+                                 <img class="articles__photo" src="./img/article2.png" height="100%" alt="">
+                             </div>
+                             <div class="articles__content">
+                                 <div class="articles__title">Публичные беты iOS и macOS, адаптивные
+                                     сетки, концепт AR-карты метрополитена
+                                 </div>
+                                 <div class="articles__info">RiverCity</div>
+                             </div>
+                     </div>
+
+                 </div>
+                 </a>
+                 <div class="articles__col">
+                     <div class="articles__item">
+                         <a target="_blank" class="project__link" href="https://www.bbc.com/news/technology-53806038">
+                             <div class="articles__header">
+                                 <!-- <time class="articles__date">30 июня</time> -->
+                                 <img class="articles__photo" src="./img/article-3.jpg" height="100%" alt="">
+                             </div>
+                             <div class="articles__content">
+                                 <div class="articles__title">The algorithms that make big decisions about your life
+                                 </div>
+                                 <div class="articles__info">James Clayton</div>
+                             </div>
+                     </div>
+
+                 </div>
+                 </a>
+
+     </section>
+     <section class="books">
+         <div class="container">
+             <div class="news__title">Книги</div>
+             <div class="books__inner">
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Jan Tschichold</div>
+                     <a href="https://www.artlebedev.com/izdal/novaya-tipografika-2016/novaya-tipografika-2016.pdf"
+                         class="books__link">The new typography</a>
+                     <div class="book__descr">Издательство Студии Лебедева, 2009</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Дональд Норман</div>
+                     <a href="https://www.mann-ivanov-ferber.ru/assets/files/bookparts/the-design-of-everyday-things/dpv_read.pdf"
+                         class="books__link">Дизайн привычных вещей</a>
+                     <div class="book__descr">Манн, Иванов и Фербер, 2012</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Эдвард Тафти</div>
+                     <a href="https://www.ozon.ru/context/detail/id/34584363/" class="books__link">Представление
+                         информации</a>
+                     <div class="book__descr">Graphic Press, 1990</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Артём Горбунов</div>
+                     <a href="https://bureau.ru/projects/book-typography/" class="books__link">Типографика и вёрстка</a>
+                     <div class="book__descr">Бюро Горбунова, 2017</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Adam Wathan</div>
+                     <a href="https://refactoringui.com/book/" class="books__link">Refactoring UI</a>
+                     <div class="book__descr">Refactoring.com, 2018</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Максим Ильяхов</div>
+                     <a href="https://www.litres.ru/avtor/pishi-sokraschay-kak-sozdavat-silnye-teksty-21112011/"
+                         class="books__link">Пиши, сокращай. Как создавать сильный текст</a>
+                     <div class="book__descr">ЛитРес, 2019</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Максим Ильяхов, Людмила Сарычева</div>
+                     <a href="https://www.litres.ru/avtor/pishi-sokraschay-kak-sozdavat-silnye-teksty-21112011/"
+                         class="books__link">Новые правила деловой переписки</a>
+                     <div class="book__descr">ЛитРес, 2020</div>
+                 </div>
+                 <div class="books__col">
+                     <!-- <div class="books__title">Моя книжная подборка</div> -->
+                     <div class="books__title">Иоханнес Иттен</div>
+                     <a href="http://www.pigareva-tat.ru/catalogs/%D0%99%D0%BE%D1%85%D0%B0%D0%BD%D0%B5%D1%81%20%D0%98%D1%82%D0%B5%D0%BD%20-%20%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D1%86%D0%B2%D0%B5%D1%82%D0%B0.pdf"
+                         class="books__link">Искусство цвета</a>
+                     <div class="book__descr">Д. Аронов, 2004</div>
+                 </div>
+             </div>
+         </div>
+         </div>
+     </section>
+     <!-- /. Articles -->
+     <!-- Footer -->
+     <footer>
+         <div class="footer" style="flex: 0 0 auto;">
+             <div class="container">
+                 <div class="footer__inner">
+                     <div class="footer__credits">
+                         <div class="footer__copyright">@2020 Все права защищены</div>
+                         <!-- <div class="footer__social">
+                             <a href="#" target="blank"></a>
+                             <a href="#" target="blank"></a>
+                             <a href="#" target="blank"></a>
+                             <a href="#" target="blank"></a>
+                         </div> -->
+                     </div>
+                     <div class="footer__nav">
+                         <a class="footer__nav--link" href="index.html#projects">Портфолио</a>
+                         <a class="footer__nav--link" href="about.html">Резюме</a>
+                         <a class="footer__nav--link" href="#articles">Статьи</a>
+                     </div>
+                 </div>
+             </div>
+             <!-- /.Footer -->
+             <!-- Modals -->
+             <div class="modal" id="modal_project_1">
+                 <div class="modal__dialog">
+                     <button class="modal__close" type="button" data-close>
+                         <div class="modal__close__btn--icon">
+                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;"
+                                 xml:space="preserve" width="20" height="19">
+                                 <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+           L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+           c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+           l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+           L284.286,256.002z" />
+                             </svg>
+                         </div>
+                     </button>
+                     <div class="modal-work">
+                         <div class="modal-work__preview">
+                             <img class="modal-work__photo" src="img/cinema-2.png" alt="">
+                         </div>
+                     </div>
+                     <div class="modal-work__footer">
+                     </div><!-- /.Modal__work -->
+                 </div><!-- /.Modal__dialog -->
+             </div><!-- /.modal__content -->
+         </div><!-- /.modal__dialog -->
+         </div><!-- /.modal -->
+     </footer>
+     <!-- Modals -->
+     <div class="modal" id="modal_project_2">
+         <div class="modal__dialog">
+             <button class="modal__close" type="button" data-close>
+                 <div class="modal__close__btn--icon">
+                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                         style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="20" height="19">
+                         <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+      L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+      c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+      l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+      L284.286,256.002z" />
+                     </svg>
+             </button>
+             <div class="modal-work">
+                 <div class="modal-work__preview">
+                     <div>
+                         <img class="modal-work__photo" src="./img/neomorfism2.png" alt="">
+                     </div>
+                     <div class="modal-work__footer">
+                     </div>
+                 </div><!-- /.Modal__work -->
+             </div>
+             <!-- /.Modal__dialog -->
+         </div><!-- /.modal__content -->
+     </div><!-- /.modal__dialog -->
+     </div><!-- /.modal -->
+     <div class="modal" id="modal_project_3">
+         <div class="modal__dialog">
+             <button class="modal__close" type="button" data-close>
+                 <div class="modal__close__btn--icon">
+                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                         style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="20" height="19">
+                         <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+     L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+     c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+     l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+     L284.286,256.002z" />
+                     </svg>
+             </button>
+             <div class="modal-work">
+                 <div class="modal-work__preview">
+                     <img class="modal-work__photo" src="./img/neomorfism.png" alt="">
+                 </div>
+             </div>
+             <div class="modal-work__footer">
+             </div>
+         </div><!-- /.Modal__work -->
+     </div>
+     <!-- /.Modal__dialog -->
+     </div><!-- /.modal__content -->
+     </div><!-- /.modal__dialog -->
+     </div><!-- /.modal -->
+     <div class="modal" id="modal_project_4">
+         <div class="modal__dialog">
+             <button class="modal__close" type="button" data-close>
+                 <div class="modal__close__btn--icon">
+                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                         style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="20" height="19">
+                         <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+    L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+    c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+    l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+    L284.286,256.002z" />
+                     </svg>
+             </button>
+             <div class="modal-work">
+                 <!-- <div class="modal-work__preview">
+                     <iframe width="100%" height="750px" class="modal-work__photo" src="https://youtu.be/SgfylACmD8Y"
+                         alt="" frameborder="0" allow="accelerometer; autoplay; 
+                         allowfullscreen"></iframe>
+                 </div> -->
+
+                 <iframe
+                     src="https://player.vimeo.com/video/450792833?autoplay=1&loop=1&muted=1&autopause=0&color=F2F2F2&title=0&byline=0&portrait=0"
+                     width="100%" height="750" frameborder="0" allowfullscreen></iframe>
+                 <div class=" modal-work__footer">
+                 </div>
+             </div><!-- /.Modal__work -->
+         </div>
+         <!-- /.Modal__dialog -->
+     </div><!-- /.modal__content -->
+     </div><!-- /.modal__dialog -->
+     </div><!-- /.modal -->
+     <div class="modal" id="modal_hire_me">
+         <div class="modal__dialog  modal__dialog--sm">
+             <button class="modal__close" type="button" data-close>
+                 <div class="modal__close__btn--icon">
+                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001"
+                         style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve" width="20" height="19">
+                         <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717
+			L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859
+			c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287
+			l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285
+			L284.286,256.002z" />
+                     </svg>
+                 </div>
+             </button>
+             <div class="contact">
+                 <div class="contact__left">
+                     <div class="contact__title mb-0">Связаться со мной</div>
+                     <div class="contact__subtitle">Чтобы начать диалог о вашей задаче, позвоните мне
+                         <a class="number" href="tel:+7 (911) 792 71 53">+7&nbsp;911-792-71-53</a>
+                         или заполните форму обратной связи.</div>
+                     <form class="form" action="/" method="post">
+                         <div class="form__group">
+                             <input class="form__input" name="input-email" type="text" id="input-name"
+                                 placeholder="Ваше имя">
+                         </div>
+                         <div class="form__group">
+                             <input class="form__input" name="input-email" type="text" id="input-email"
+                                 placeholder="Почта или номер телефона">
+                         </div>
+                         <div class="form__group">
+                             <textarea class="form__textarea" name="input-text" id="input-text"
+                                 placeholder="Несколько слов о вашем проекте"></textarea>
+                         </div>
+
+                         <div class="text-left">
+                             <button class="btn btn__contact" type="submit">Отправить</button>
+                         </div>
+                     </form>
+                 </div><!-- /.contact__left -->
+             </div><!-- /.contact -->
+
+         </div><!-- /.modal__dialog -->
+     </div><!-- /.modal -->
+     <!-- Canvas -->
+
+     <div class="container">
+         <canvas id="canvas" width="400" height="400"></canvas>
+
+         <!-- /.Canvas -->
+         <!-- JS -->
+         <script>
+             //  Canvas
+             /*=============================================================================*/
+             /* Smooth Trail
+             /*=============================================================================*/
+             var smoothTrail = function (c, cw, ch) {
+
+                 /*=============================================================================*/
+                 /* Initialize
+                 /*=============================================================================*/
+                 this.init = function () {
+                     this.loop();
+                 };
+
+                 /*=============================================================================*/
+                 /* Variables
+/*=============================================================================*/
+                 var _this = this;
+                 this.c = c;
+                 this.ctx = c.getContext('2d');
+                 this.cw = cw;
+                 this.ch = ch;
+                 this.mx = 0;
+                 this.my = 0;
+
+                 //trail
+                 this.trail = [];
+                 this.maxTrail = 200;
+                 this.mouseDown = false;
+
+                 this.ctx.lineWidth = .1;
+                 this.ctx.lineJoin = 'round';
+
+                 this.radius = 1;
+                 this.speed = 0.4;
+                 this.angle = 0;
+                 this.arcx = 0;
+                 this.arcy = 0;
+                 this.growRadius = true;
+                 this.seconds = 0;
+                 this.milliseconds = 0;
+
+                 /*=============================================================================*/
+                 /* Utility Functions
+/*=============================================================================*/
+                 this.rand = function (rMi, rMa) {
+                     return ~~((Math.random() * (rMa - rMi + 1)) + rMi);
+                 };
+                 this.hitTest = function (x1, y1, w1, h1, x2, y2, w2, h2) {
+                     return !(x1 + w1 < x2 || x2 + w2 < x1 || y1 + h1 < y2 || y2 + h2 < y1);
+                 };
+
+                 /*=============================================================================*/
+                 /* Create Point
+/*=============================================================================*/
+                 this.createPoint = function (x, y) {
+                     this.trail.push({
+                         x: x,
+                         y: y
+                     });
+                 };
+
+                 /*=============================================================================*/
+                 /* Update Trail
+/*=============================================================================*/
+                 this.updateTrail = function () {
+
+                     if (this.trail.length < this.maxTrail) {
+                         this.createPoint(this.arcx, this.arcy);
+                     }
+
+                     if (this.trail.length >= this.maxTrail) {
+                         this.trail.splice(0, 1);
+                     }
+                 };
+
+                 /*=============================================================================*/
+                 /* Update Arc
+/*=============================================================================*/
+                 this.updateArc = function () {
+                     this.arcx = (this.cw / 2) + Math.sin(this.angle) * this.radius;
+                     this.arcy = (this.ch / 2) + Math.cos(this.angle) * this.radius;
+                     var d = new Date();
+                     this.seconds = d.getSeconds();
+                     this.milliseconds = d.getMilliseconds();
+                     this.angle += this.speed * (this.seconds + 1 + (this.milliseconds / 1000));
+
+                     if (this.radius <= 1) {
+                         this.growRadius = true;
+                     }
+                     if (this.radius >= 200) {
+                         this.growRadius = false;
+                     }
+
+                     if (this.growRadius) {
+                         this.radius += 1;
+                     } else {
+                         this.radius -= 1;
+                     }
+                 };
+
+                 /*=============================================================================*/
+                 /* Render Trail
+/*=============================================================================*/
+                 this.renderTrail = function () {
+                     var i = this.trail.length;
+
+                     this.ctx.beginPath();
+                     while (i--) {
+                         var point = this.trail[i];
+                         var nextPoint = (i == this.trail.length) ? this.trail[i + 1] : this.trail[i];
+
+                         var c = (point.x + nextPoint.x) / 2;
+                         var d = (point.y + nextPoint.y) / 2;
+                         this.ctx.quadraticCurveTo(Math.round(this.arcx), Math.round(this.arcy), c, d);
+
+
+
+                     };
+                     this.ctx.strokeStyle = 'hsla(' + this.rand(0, 0) + ', 0%, ' + this.rand(50, 30) +
+                         '%, 1)';
+                     this.ctx.stroke();
+                     this.ctx.closePath();
+
+                 };
+
+
+                 /*=============================================================================*/
+                 /* Clear Canvas
+/*=============================================================================*/
+                 this.clearCanvas = function () {
+                     //this.ctx.globalCompositeOperation = 'source-over';
+                     //this.ctx.clearRect(0,0,this.cw,this.ch);
+
+                     this.ctx.globalCompositeOperation = 'destination-out';
+                     this.ctx.fillStyle = 'rgba(0,0,0,.1)';
+                     this.ctx.fillRect(0, 0, this.cw, this.ch);
+                     this.ctx.globalCompositeOperation = 'lighter';
+                 };
+
+                 /*=============================================================================*/
+                 /* Animation Loop
+/*=============================================================================*/
+                 this.loop = function () {
+                     var loopIt = function () {
+                         requestAnimationFrame(loopIt, _this.c);
+                         _this.clearCanvas();
+                         _this.updateArc();
+                         _this.updateTrail();
+                         _this.renderTrail();
+                     };
+                     loopIt();
+                 };
+
+             };
+
+             /*=============================================================================*/
+             /* Check Canvas Support
+             /*=============================================================================*/
+             var isCanvasSupported = function () {
+                 var elem = document.createElement('canvas');
+                 return !!(elem.getContext && elem.getContext('2d'));
+             };
+
+             /*=============================================================================*/
+             /* Setup requestAnimationFrame
+             /*=============================================================================*/
+             var setupRAF = function () {
+                 var lastTime = 0;
+                 var vendors = ['ms', 'moz', 'webkit', 'o'];
+                 for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                     window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+                     window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[
+                         x] + 'CancelRequestAnimationFrame'];
+                 };
+
+                 if (!window.requestAnimationFrame) {
+                     window.requestAnimationFrame = function (callback, element) {
+                         var currTime = new Date().getTime();
+                         var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                         var id = window.setTimeout(function () {
+                             callback(currTime + timeToCall);
+                         }, timeToCall);
+                         lastTime = currTime + timeToCall;
+                         return id;
+                     };
+                 };
+
+                 if (!window.cancelAnimationFrame) {
+                     window.cancelAnimationFrame = function (id) {
+                         clearTimeout(id);
+                     };
+                 };
+             };
+
+             /*=============================================================================*/
+             /* Define Canvas and Initialize
+             /*=============================================================================*/
+             if (isCanvasSupported) {
+                 var c = document.createElement('canvas');
+                 c.width = 400;
+                 c.height = 400;
+                 var cw = c.width;
+                 var ch = c.height;
+                 document.body.appendChild(c);
+                 var cl = new smoothTrail(c, cw, ch);
+
+                 setupRAF();
+                 cl.init();
+             }
+         </script>
+         <script>
+             window.onload = function () {
+                 document.body.classList.add('loaded_hiding');
+                 window.setTimeout(function () {
+                     document.body.classList.add('loaded');
+                     document.body.classList.remove('loaded_hiding');
+                 }, 500);
+             }
+         </script>
+         <script>
+             //  Canvas
+             // Init Stats
+             var stats = new Stats();
+             stats.setMode(0);
+             stats.domElement.style.position = 'absolute';
+             stats.domElement.style.left = '0px';
+             stats.domElement.style.top = '0px';
+             document.body.appendChild(stats.domElement);
+
+
+
+             (function ($, window) {
+                 var $window = $(window);
+
+                 function Constellation(canvas, options) {
+                     var $canvas = $(canvas),
+                         context = canvas.getContext('2d'),
+                         defaults = {
+                             star: {
+                                 color: 'rgba(255, 255, 255, .5)',
+                                 width: 1,
+                                 randomWidth: true
+                             },
+                             line: {
+                                 color: 'rgba(255, 255, 255, .5)',
+                                 width: 0.2
+                             },
+                             position: {
+                                 x: 0,
+                                 y: 0
+                             },
+                             width: window.innerWidth,
+                             height: window.innerHeight,
+                             velocity: 0.1,
+                             length: 100,
+                             distance: 120,
+                             radius: 150,
+                             stars: []
+                         },
+                         config = $.extend(true, {}, defaults, options);
+
+                     function Star() {
+                         this.x = Math.random() * canvas.width;
+                         this.y = Math.random() * canvas.height;
+
+                         this.vx = (config.velocity - (Math.random() * 0.5));
+                         this.vy = (config.velocity - (Math.random() * 0.5));
+
+                         this.radius = config.star.randomWidth ? (Math.random() * config.star.width) : config.star
+                             .width;
+                     }
+
+                     Star.prototype = {
+                         create: function () {
+                             context.beginPath();
+                             context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                             context.fill();
+                         },
+
+                         animate: function () {
+                             var i;
+                             for (i = 0; i < config.length; i++) {
+
+                                 var star = config.stars[i];
+
+                                 if (star.y < 0 || star.y > canvas.height) {
+                                     star.vx = star.vx;
+                                     star.vy = -star.vy;
+                                 } else if (star.x < 0 || star.x > canvas.width) {
+                                     star.vx = -star.vx;
+                                     star.vy = star.vy;
+                                 }
+
+                                 star.x += star.vx;
+                                 star.y += star.vy;
+                             }
+                         },
+
+                         line: function () {
+                             var length = config.length,
+                                 iStar,
+                                 jStar,
+                                 i,
+                                 j;
+
+                             for (i = 0; i < length; i++) {
+                                 for (j = 0; j < length; j++) {
+                                     iStar = config.stars[i];
+                                     jStar = config.stars[j];
+
+                                     if (
+                                         (iStar.x - jStar.x) < config.distance &&
+                                         (iStar.y - jStar.y) < config.distance &&
+                                         (iStar.x - jStar.x) > -config.distance &&
+                                         (iStar.y - jStar.y) > -config.distance
+                                     ) {
+                                         if (
+                                             (iStar.x - config.position.x) < config.radius &&
+                                             (iStar.y - config.position.y) < config.radius &&
+                                             (iStar.x - config.position.x) > -config.radius &&
+                                             (iStar.y - config.position.y) > -config.radius
+                                         ) {
+                                             context.beginPath();
+                                             context.moveTo(iStar.x, iStar.y);
+                                             context.lineTo(jStar.x, jStar.y);
+                                             context.stroke();
+                                             context.closePath();
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     };
+
+                     this.createStars = function () {
+                         var length = config.length,
+                             star,
+                             i;
+
+                         context.clearRect(0, 0, canvas.width, canvas.height);
+
+                         for (i = 0; i < length; i++) {
+                             config.stars.push(new Star());
+                             star = config.stars[i];
+
+                             star.create();
+                         }
+
+                         star.line();
+                         star.animate();
+                     };
+
+                     this.setCanvas = function () {
+                         canvas.width = config.width;
+                         canvas.height = config.height;
+                     };
+
+                     this.setContext = function () {
+                         context.fillStyle = config.star.color;
+                         context.strokeStyle = config.line.color;
+                         context.lineWidth = config.line.width;
+                     };
+
+                     this.setInitialPosition = function () {
+                         if (!options || !options.hasOwnProperty('position')) {
+                             config.position = {
+                                 x: canvas.width * 0.5,
+                                 y: canvas.height * 0.5
+                             };
+                         }
+                     };
+
+                     this.loop = function (callback) {
+                         callback();
+
+                         this.rAF = window.requestAnimationFrame(function () {
+                             stats.begin();
+                             this.loop(callback);
+                             stats.end();
+                         }.bind(this));
+                     };
+
+                     this.handlers = {
+                         window: {
+                             mousemove: function (e) {
+                                 config.position.x = e.pageX - $canvas.offset().left;
+                                 config.position.y = e.pageY - $canvas.offset().top;
+                             },
+                             resize: function () {
+                                 window.cancelAnimationFrame(this.rAF);
+                             }
+                         }
+                     };
+
+                     this.bind = function () {
+                         $window
+                             .on('mousemove', this.handlers.window.mousemove)
+                             .on('resize', this.handlers.window.resize.bind(this));
+                     };
+
+                     this.unbind = function () {
+                         $window
+                             .off('mousemove', this.handlers.window.mousemove)
+                             .off('resize', this.handlers.window.resize);
+                     }
+
+                     this.init = function () {
+                         this.setCanvas();
+                         this.setContext();
+                         this.setInitialPosition();
+                         this.loop(this.createStars);
+                         this.bind();
+                     };
+                 }
+
+                 function instantiate(element, options) {
+                     var c = new Constellation(element, options);
+                     c.init();
+                 }
+
+                 $.fn.constellation = function (options) {
+                     return this.each(function () {
+                         $window.on('resize', () => {
+                             instantiate(this, options);
+                         });
+
+                         instantiate(this, options);
+                     });
+                 };
+             })($, window);
+
+             // Init plugin
+             $('canvas').constellation({
+                 star: {
+                     width: 3
+                 },
+                 line: {
+                     color: 'rgba(255, 255, 255, .5)'
+                 },
+                 length: (window.innerWidth / 6),
+                 radius: (window.innerWidth / 5)
+             });
+         </script>
+         <script>
+             $(function () {
+                 $('.round').click(function () {
+                     $('html,body').animate({
+                         scrollTop: $('#header').offset().top
+                     }, 500);
+                 });
+             });
+         </script>
+         <script>
+             //   Anchor
+             $(document).ready(function () {
+                 var $element = $('.portfolio');
+                 let counter = 0;
+
+
+                 $(window).scroll(function () {
+                     var scroll = $(window).scrollTop() + $(window).height();
+                     var offset = $element.offset().top
+                     if (scroll > offset && counter == 0) {
+                         $('#arrowTop').fadeIn(800);
+                         counter = 0;
+                     }
+                 });
+                 $('#arrowTop').click(function () {
+                     $('#arrowTop').fadeOut();
+                 });
+                 $(window).scroll(function () {
+                     if ($(this).scrollTop() > 100) {
+                         $('#arrowTop').fadeIn();
+                     } else {
+                         $('#arrowTop').fadeOut();
+                     }
+                 });
+             });
+         </script>
+         <script src="js/script.js"></script>
+         <script src="js/cursor.js"></script>
+         <!-- /.JS -->
+ </body>
+
+ </html>
