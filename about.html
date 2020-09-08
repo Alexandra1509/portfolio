@@ -3,14 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
@@ -28,12 +25,13 @@
                     <div class="user__content">
                         <a href="index.html" class="user__name">INTENSE</a>
                         <div id="particles-js"></div>
-                        <script src="js/three.js"></script>
-                        <script src="js/Projector.js"></script>
-                        <script src="js/CanvasRenderer2.js"></script>
-                        <script src="js/stats.min.js"></script>
-                        <script src="js/Bird.js"></script>
-                        <script src="js/mainbird.js"></script>
+                        <script src="libs/jquery.min.js"></script>
+                        <script src="libs/three.js"></script>
+                        <script src="libs/Projector.js"></script>
+                        <script src="libs/CanvasRenderer2.js"></script>
+                        <script src="libs/stats.min.js"></script>
+                        <script src="libs/Bird.js"></script>
+                        <script src="libs/mainbird.js"></script>
                     </div>
                 </div>
                 <!-- Burger -->
@@ -61,7 +59,7 @@
             <div class="persona__inner">
                 <div class="persona__col persona__col--1">
                     <div class="persona__photo">
-                        <img class="img__persona" src="./img/my_photo.jpg" alt="my_photo">
+                        <img class="img__persona" src="img/dest/my_photo.jpg" alt="my_photo">
                     </div>
                     <div class="persona__header persona__header--2">
                         <div class="persona__name">Александра Афанасенкова</div>
@@ -636,9 +634,10 @@
                 }, 500);
             }
         </script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/cursor.js"></script>
+
+        <!-- <script src="libs/slick.min.js"></script> -->
+        <script src="libs/script.js"></script>
+        <script src="libs/cursor.js"></script>
 </body>
 
 </html>

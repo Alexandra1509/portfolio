@@ -3,14 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
@@ -43,12 +40,13 @@
                     <div class="user__content">
                         <a href="index.html" class="user__name">INTENSE</a>
                         <div id="particles-js"></div>
-                        <script src="js/three.js"></script>
-                        <script src="js/Projector.js"></script>
-                        <script src="js/CanvasRenderer2.js"></script>
-                        <script src="js/stats.min.js"></script>
-                        <script src="js/Bird.js"></script>
-                        <script src="js/mainbird.js"></script>
+                        <script src="libs/jquery.min.js"></script>
+                        <script src="libs/three.js"></script>
+                        <script src="libs/Projector.js"></script>
+                        <script src="libs/CanvasRenderer2.js"></script>
+                        <script src="libs/stats.min.js"></script>
+                        <script src="libs/Bird.js"></script>
+                        <script src="libs/mainbird.js"></script>
                     </div>
                 </div>
                 <nav class="nav">
@@ -82,7 +80,7 @@
     <main>
         <div class="container">
             <div class="travel-photo">
-                <img class="travel-photo__img" src="./img/portfolio/main-tez.png" alt="">
+                <img class="travel-photo__img" src="img/dest/portfolio/main-tez.png" alt="">
             </div>
             <div class="travel__inner travel__inner--1">
                 <div class="travel__col travel__col--1">
@@ -109,7 +107,7 @@
                 </div>
             </div>
             <div class="travel__col travel__col--3">
-                <img class="project-img" src="./img/portfolio/main.png" alt="" class="project-img">
+                <img class="project-img" src="img/dest/portfolio/main.png" alt="" class="project-img">
             </div>
             <div class="travel__inner">
                 <div class="travel__col travel__col--1">
@@ -126,7 +124,7 @@
             </div>
             <div class="travel__inner">
                 <div class="travel__col travel__col--3">
-                    <img class="project-img" src="./img/portfolio/search.png" alt="" class="project-img">
+                    <img class="project-img lazy" data-src="img/dest/portfolio/search.png" alt="" class="project-img">
                 </div>
             </div>
             <div class="travel__inner">
@@ -145,10 +143,10 @@
             </div>
             <div class="travel__inner">
                 <div class="travel__col travel__col--4">
-                    <img class="project-img project-img-big" src="./img/portfolio/verification.png" alt="">
+                    <img class="project-img project-img-big lazy" data-src="img/dest/portfolio/verification.png" alt="">
                 </div>
-                <div class="travel__col travel__col--4"><img class="project-img"
-                        src="./img/portfolio/verification-1.png" alt=""></div>
+                <div class="travel__col travel__col--4"><img class="project-img lazy"
+                        data-src="img/dest/portfolio/verification-1.png" alt=""></div>
             </div>
             <div class="travel__inner">
                 <div class="travel__col travel__col--1">
@@ -167,10 +165,10 @@
             </div>
             <div class="travel__inner">
                 <div class="travel__col travel__col--4">
-                    <img class="project-img project-img-cut" src="./img/portfolio/hotels-cut.png" alt="">
+                    <img class="project-img project-img-cut lazy" data-src="img/dest/portfolio/hotels-cut.png" alt="">
                 </div>
-                <div class="travel__col travel__col--4"><img class="project-img project-img-cut"
-                        src="./img/portfolio/payment-cut.png" alt=""></div>
+                <div class="travel__col travel__col--4"><img class="project-img project-img-cut lazy"
+                        data-src="img/dest/portfolio/payment-cut.png" alt=""></div>
             </div>
             <div class="travel__inner">
                 <div class="travel__col travel__col--1">
@@ -188,23 +186,24 @@
                 </div>
             </div>
             <div class="travel__inner travel__inner--1">
-                <div class="travel__col travel__col--5"><a data-fancybox="gallery" href="./img/portfolio/news.png"><img
-                            class="project-img" src="./img/portfolio/news.png"></a></div>
-                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
-                        href="./img/portfolio/article.png"><img class="project-img"
-                            src="./img/portfolio/article.png"></a></div>
-                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
-                        href="./img/portfolio/cooperation.png"><img class="project-img"
-                            src="./img/portfolio/cooperation.png"></a></div>
-                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
-                        href="./img/portfolio/about_the_company.png"><img class="project-img"
-                            src="./img/portfolio/about_the_company.png"></a></div>
-                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
-                        href="./img/portfolio/employeer-1.png"><img class="project-img"
-                            src="./img/portfolio/employeer-1.png"></a></div>
-                <div class="travel__col travel__col--5"><a data-fancybox="gallery"
-                        href="./img/portfolio/employeer-2.png"><img class="project-img"
-                            src="./img/portfolio/employeer-2.png"></a></div>
+                <div class="travel__col travel__col--5">
+                    <a data-fancybox="gallery" href="img/dest/portfolio/news.png">
+                        <img class="project-img lazy" data-src="img/dest/portfolio/news.png"></a></div>
+                <div class="travel__col travel__col--5">
+                    <a data-fancybox="gallery" href="img/dest/portfolio/article.png">
+                        <img class="project-img lazy" data-src="img/dest/portfolio/article.png"></a></div>
+                <div class="travel__col travel__col--5">
+                    <a data-fancybox="gallery" href="img/dest/portfolio/cooperation.png">
+                        <img class="project-img lazy" data-src="img/dest/portfolio/cooperation.png"></a></div>
+                <div class="travel__col travel__col--5">
+                    <a data-fancybox="gallery" href="img/dest/portfolio/about_the_company.png">
+                        <img class="project-img lazy" data-src="img/dest/portfolio/about_the_company.png"></a></div>
+                <div class="travel__col travel__col--5">
+                    <a data-fancybox="gallery" href="img/dest/portfolio/employeer-1.png">
+                        <img class="project-img lazy" data-src="img/dest/portfolio/employeer-1.png"></a></div>
+                <div class="travel__col travel__col--5">
+                    <a data-fancybox="gallery" href="img/dest/portfolio/employeer-2.png">
+                        <img class="project-img lazy" data-src="img/dest/portfolio/employeer-2.png"></a></div>
             </div>
 
             <div class="container">
@@ -218,7 +217,7 @@
                                 href="https://www.behance.net/gallery/88561043/Alexandra-Millenary-hats-shop-redesign">
                                 <div class="work">
                                     <div class="work__img-wrapper">
-                                        <img class="work__image" src="img/Millinery.jpg" alt="">
+                                        <img class="work__image lazy" data-src="img/dest/Millinery.jpg" alt="">
                                     </div>
                                     <div class="work__content">
                                         <div class="work__title">Millenary</div>
@@ -232,7 +231,7 @@
                             <a target="_blank" class="project__link" href="https://alexandra1509.github.io/restaurant/">
                                 <div class="work">
                                     <div class="work__img-wrapper">
-                                        <img class="work__image" src="./img/restaurant.jpg" alt="">
+                                        <img class="work__image lazy" data-src="img/dest/restaurant.jpg" alt="">
                                     </div>
                                     <div class="work__content">
                                         <div class="work__title">Vinkeles</div>
@@ -316,6 +315,15 @@
     </footer>
     <!-- /.Footer -->
     <!-- JS -->
+
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+	<script src="libs/yall.min.js"></script>
+	<script>
+		yall({
+			threshold: 1500
+		});
+	</script>
+    
     <script>
         window.onload = function () {
             document.body.classList.add('loaded_hiding');
@@ -361,12 +369,10 @@
             });
         });
     </script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/cursor.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="libs/slick.min.js"></script> -->
+    <script src="libs/script.js"></script>
+    <script src="libs/cursor.js"></script>
+    <script src="libs/jquery.fancybox.min.js"></script>
 
 </body>
 
